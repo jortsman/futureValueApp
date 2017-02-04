@@ -6,12 +6,12 @@ investment = parseFloat(investment);
 var rate = prompt('What was your interest rate? \n Enter the value as a number like this: xx.xx', 6.5);
 rate = parseFloat(rate);
 var years = prompt('How many years? \n Enter the value as a number like this: xx', 10);
-years = parseFloat(years);
+years = parseInt(years);
 
 //Calculation
 
 futureValue = investment;
 for (var i = 1; i <= years; i++) {
-  futureValue = futureValue + (futureValue * rate/100);
+    futureValue = futureValue + (futureValue * rate / 100);
 }
 futureValue = parseInt(futureValue);
